@@ -1,0 +1,15 @@
+[build]
+    base = "/"
+    publish= "public"
+    command="gatsby build"
+
+[functions]
+    directory = "functions"
+
+[dev]
+    command = "gatsby develop"
+
+[[redirects]]
+    from = "/api/*"
+    to ="/.netlify/functions/sheets/:splat"
+    status = 200
