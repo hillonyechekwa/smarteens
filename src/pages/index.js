@@ -5,7 +5,7 @@ const IndexPage = () => {
   const [hello, setHello] = useState(null)
 
   useEffect(() => {
-    fetch('/.ntlify/api/sheets')
+    // fetch('/.ntlify/api/sheets')
   })
   
   return (
