@@ -13,6 +13,8 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-netlify",
+    `gatsby-transformer-csv`,
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -37,6 +39,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
     },
   ],
 };

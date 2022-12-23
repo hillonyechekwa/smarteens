@@ -1,12 +1,28 @@
 import React, {useEffect, useState} from "react"
+import axios from 'axios'
 
 
 const IndexPage = () => {
-  const [hello, setHello] = useState(null)
+  const [hello, setHello] = useState()
 
   useEffect(() => {
-    // fetch('/.ntlify/api/sheets')
-  })
+    // async function fetchData() {
+    //   try{
+
+    //     const response = await axios.get('/api/sheets')
+
+    //       if(!response.ok) {
+    //         throw new Error(`Error Status ${response.status}`)
+    //       }
+    //       const result = await response.json()
+    //       console.log(result)
+    //   } catch (error) {
+    //     console.log(error)
+    //   }
+    // }
+
+    // fetchData()
+  }, [])
   
   return (
     <main>

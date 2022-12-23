@@ -11,8 +11,3 @@
 
 [[plugins]]
     package = "@netlify/plugin-gatsby"
-
-[[redirects]]
-    from = "/api/*"
-    to ="/.netlify/functions/sheets/:splat"
-    status = 200
